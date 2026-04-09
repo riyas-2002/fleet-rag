@@ -110,11 +110,15 @@ async function sendQuery() {
     const loader = addMessage("Thinking...", "bot loader");
 
     try {
-        const res = await fetch("http://127.0.0.1:8000/ask", {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({ query })
-        });
+        const query = document.getElementById("query").value;
+
+const res = await fetch("https://fleet-rag.onrender.com/ask", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ query })
+});
 
         const data = await res.json();
 
