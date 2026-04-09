@@ -1,0 +1,72 @@
+[
+{
+"vehicle": "Ashok Leyland 1618",
+"issue": "engine overheating",
+"symptoms": "temperature rises during uphill drive",
+"fix": "coolant leak in radiator pipe",
+"date": "2024-02-10"
+},
+{
+"vehicle": "Tata 1613",
+"issue": "brake failure",
+"symptoms": "soft brake pedal, increased stopping distance",
+"fix": "air pressure leak fixed and brake pads replaced",
+"date": "2024-01-22"
+},
+{
+"vehicle": "Volvo FH16",
+"issue": "engine knocking",
+"symptoms": "loud knocking noise during acceleration",
+"fix": "fuel injector cleaned and recalibrated",
+"date": "2024-03-05"
+},
+{
+"vehicle": "Eicher Pro 3015",
+"issue": "battery drain",
+"symptoms": "vehicle not starting after overnight parking",
+"fix": "alternator fault repaired",
+"date": "2024-02-18"
+},
+{
+"vehicle": "BharatBenz 1217",
+"issue": "clutch slipping",
+"symptoms": "loss of power when accelerating",
+"fix": "clutch plate replaced",
+"date": "2024-03-01"
+},
+{
+"vehicle": "Tata Signa 4830",
+"issue": "fuel inefficiency",
+"symptoms": "high fuel consumption",
+"fix": "air filter cleaned and injectors serviced",
+"date": "2024-02-27"
+},
+{
+"vehicle": "Ashok Leyland Dost",
+"issue": "engine misfire",
+"symptoms": "jerking while driving",
+"fix": "spark plugs replaced",
+"date": "2024-03-12"
+},
+{
+"vehicle": "Mahindra Blazo X",
+"issue": "turbo failure",
+"symptoms": "loss of power and black smoke",
+"fix": "turbocharger replaced",
+"date": "2024-03-15"
+},
+{
+"vehicle": "Eicher Pro 6040",
+"issue": "gear shifting problem",
+"symptoms": "difficulty changing gears",
+"fix": "gearbox oil replaced",
+"date": "2024-02-09"
+},
+{
+"vehicle": "Volvo FMX",
+"issue": "coolant leakage",
+"symptoms": "low coolant levels frequently",
+"fix": "hose replaced",
+"date": "2024-01-30"
+}
+]

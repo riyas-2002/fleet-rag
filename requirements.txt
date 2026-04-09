@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+langchain
+qdrant-client
+sentence-transformers
+ollama
+pypdf

@@ -1,0 +1,32 @@
+[
+{
+"driver": "Raj",
+"route": "Kochi → Calicut",
+"vehicle": "Ashok Leyland 1618",
+"date": "2024-03-01"
+},
+{
+"driver": "Ravi",
+"route": "Kochi → Trivandrum",
+"vehicle": "Tata 1613",
+"date": "2024-03-03"
+},
+{
+"driver": "Amit",
+"route": "Calicut → Bangalore",
+"vehicle": "Volvo FH16",
+"date": "2024-03-02"
+},
+{
+"driver": "Rahul",
+"route": "Kochi → Coimbatore",
+"vehicle": "Eicher Pro 3015",
+"date": "2024-03-04"
+},
+{
+"driver": "Raj",
+"route": "Calicut → Mangalore",
+"vehicle": "BharatBenz 1217",
+"date": "2024-03-06"
+}
+]

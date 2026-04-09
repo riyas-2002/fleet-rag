@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fleet AI Assistant</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 750px;
+            margin-top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .chat-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            height: 450px;
+            overflow-y: auto;
+        }
+
+        .message {
+            padding: 12px 16px;
+            margin: 10px 0;
+            border-radius: 12px;
+            max-width: 75%;
+            white-space: pre-line;
+        }
+
+        .user {
+            background: #22c55e;
+            color: black;
+            margin-left: auto;
+        }
+
+        .bot {
+            background: #1e293b;
+        }
+
+        .input-area {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: none;
+            background: #22c55e;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .loader {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🚛 Fleet AI Assistant</h1>
+
+    <div class="chat-box" id="chat"></div>
+
+    <div class="input-area">
+        <input id="query" placeholder="Ask about routes or vehicle issues..." />
+        <button onclick="sendQuery()">Send</button>
+    </div>
+</div>
+
+<script>
+async function sendQuery() {
+    const input = document.getElementById("query");
+    const chat = document.getElementById("chat");
+
+    const query = input.value.trim();
+    if (!query) return;
+
+    // User message
+    addMessage(query, "user");
+
+    input.value = "";
+
+    // Loader
+    const loader = addMessage("Thinking...", "bot loader");
+
+    try {
+        const res = await fetch("http://127.0.0.1:8000/ask", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({ query })
+        });
+
+        const data = await res.json();
+
+        chat.removeChild(loader);
+
+        let responseText = "";
+
+        if (typeof data.response === "object") {
+            if (data.response.type === "driver_result") {
+                responseText =
+                    `🚛 ${data.response.driver}\n\nRoutes:\n- ${data.response.routes.join("\n- ")}`;
+            } else {
+                responseText = JSON.stringify(data.response, null, 2);
+            }
+        } else {
+            responseText = data.response;
+        }
+
+        addMessage(responseText, "bot");
+
+    } catch (err) {
+        chat.removeChild(loader);
+        addMessage("❌ Error connecting to server", "bot");
+    }
+}
+
+function addMessage(text, type) {
+    const chat = document.getElementById("chat");
+
+    const msg = document.createElement("div");
+    msg.className = "message " + type;
+    msg.innerText = text;
+
+    chat.appendChild(msg);
+    chat.scrollTop = chat.scrollHeight;
+
+    return msg;
+}
+</script>
+
+</body>
+</html>

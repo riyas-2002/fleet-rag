@@ -1,0 +1,70 @@
+
+Vehicle: Ashok Leyland 1618
+Issue: engine overheating
+Symptoms: temperature rises during uphill drive
+Fix: coolant leak in radiator pipe
+Date: 2024-02-10
+-------------------------
+
+Vehicle: Tata 1613
+Issue: brake failure
+Symptoms: soft brake pedal, increased stopping distance
+Fix: air pressure leak fixed and brake pads replaced
+Date: 2024-01-22
+-------------------------
+
+Vehicle: Volvo FH16
+Issue: engine knocking
+Symptoms: loud knocking noise during acceleration
+Fix: fuel injector cleaned and recalibrated
+Date: 2024-03-05
+-------------------------
+
+Vehicle: Eicher Pro 3015
+Issue: battery drain
+Symptoms: vehicle not starting after overnight parking
+Fix: alternator fault repaired
+Date: 2024-02-18
+-------------------------
+
+Vehicle: BharatBenz 1217
+Issue: clutch slipping
+Symptoms: loss of power when accelerating
+Fix: clutch plate replaced
+Date: 2024-03-01
+-------------------------
+
+Vehicle: Tata Signa 4830
+Issue: fuel inefficiency
+Symptoms: high fuel consumption
+Fix: air filter cleaned and injectors serviced
+Date: 2024-02-27
+-------------------------
+
+Vehicle: Ashok Leyland Dost
+Issue: engine misfire
+Symptoms: jerking while driving
+Fix: spark plugs replaced
+Date: 2024-03-12
+-------------------------
+
+Vehicle: Mahindra Blazo X
+Issue: turbo failure
+Symptoms: loss of power and black smoke
+Fix: turbocharger replaced
+Date: 2024-03-15
+-------------------------
+
+Vehicle: Eicher Pro 6040
+Issue: gear shifting problem
+Symptoms: difficulty changing gears
+Fix: gearbox oil replaced
+Date: 2024-02-09
+-------------------------
+
+Vehicle: Volvo FMX
+Issue: coolant leakage
+Symptoms: low coolant levels frequently
+Fix: hose replaced
+Date: 2024-01-30
+-------------------------
