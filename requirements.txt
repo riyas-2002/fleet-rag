@@ -6,3 +6,4 @@ sentence-transformers
 ollama
 pypdf
 langchain-huggingface
+langchain-community
