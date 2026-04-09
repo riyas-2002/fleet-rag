@@ -5,3 +5,4 @@ qdrant-client
 sentence-transformers
 ollama
 pypdf
+langchain-huggingface
